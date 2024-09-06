@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Coco-Gothic-Light-trial;
+    src: url(fonts/Coco-Gothic-Light-trial.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgb(46, 45, 51);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .5s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+
+h1 {
+    padding: 80px;
+}
+h2 {
+    padding: 50px;
+}
+
+.text {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.buttons {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 100px;
+    padding: 20px 300px;
+    display: flex;
+}
+.buttons a {
+    background-color: rgb(75, 174, 255);
+    color: #fff;
+    font-weight: 1000;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-sizing: content-box;
+    padding: 70px;
+    transition-duration: 0.5s;
+}
+.buttons a:hover {
+    background-color: rgb(142, 204, 255)
+}
+#left {
+    text-align: left;
+}
+
+footer {
+    padding: 20px;
+    color: #b1b1b1;
+    text-align: center;
+    background: rgb(46, 45, 51);
+}
